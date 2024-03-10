@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    background: whitesmoke;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: blueviolet;
+    pointer-events: none;
+    margin-right: 28%;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: blueviolet;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: blueviolet;
+    color: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    font-size: 5em;
+    transform: translateY(-50%);
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.parallax img {
+    position: absolute;
+    bottom: 0;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+
+#plants {
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+}
+
+.note {
+    position: relative;
+    background-color: #4e253f;
+    padding: 100px;
+}
+
+.note h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.note p,
+li {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    line-height: 3em;
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 20px;
+    }
+    .logo {
+        font-size: 1em;
+    }
+    .navigation a {
+        display: none;
+    }
+}
